@@ -1,0 +1,121 @@
+body,
+button,
+input {
+  font-family: Montserrat, Arial;
+}
+body {
+  background-color: #1D1616;
+}
+.to-do-container-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-style {
+  color: white;
+  font-size: 16px;
+}
+.task-text-style {  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.to-do-input-style {
+  background-color: #1E3E62;
+  color: white;
+  font-size: 16px;
+  padding: 10px 8px 10px 16px;
+  border: none;
+  border-radius: 20px;
+  flex: 1;
+  margin: 4px 10px;
+  outline: none;
+  width: 600px;
+  transition: background-color, 0.3s;
+  }
+.to-do-input-style::placeholder {
+  color: white;
+}
+.to-do-input-style:hover,
+.date-input-style:hover,
+.to-do-input-style:focus,
+.date-input-style:focus {
+  background-color: #224b7a;
+}
+.add-task-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.to-do-components-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 835px;
+  background-color: white;
+  padding: 0px 10px; 
+  margin: 4px 2px;
+  border-radius: 40px;
+  transition: width, 0.4s;
+}
+
+.task-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.add-icon-style{
+  cursor: pointer;
+  height: 36px;
+  border: none;
+  border-radius: 40px;
+  padding: 4px 4px 4px 5px;
+  background-color: white;
+  transition: background-color, 0.2s;
+}
+.add-icon-style:hover {
+  background-color: #4884c9;
+}
+.task-text-style {
+  margin: 8px 2px 8px 10px;
+  font-weight: 500;
+  flex: 1;
+}
+.task-datetime-text-style {
+  margin: 8px 10px;
+  font-weight: 500;
+}
+.task-remove-btn-style {
+  font-weight: 600;
+  margin-right: -3px;
+  background-color: #1E3E62;
+  color: white;
+  border: none;
+  padding: 4px 10px 6px 10px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: padding, 0.4s;
+}
+.task-remove-btn-style:hover {
+  padding: 4px 12px 6px 12px;
+}
+.date-input-style {
+  background-color: #1E3E62;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 18px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color, 0.3s;
+}
+

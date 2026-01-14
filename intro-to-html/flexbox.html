@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/flexbox.css">
+    <style>
+      .notifications {
+        background-color: rgb(20, 53, 202);
+        color: white;
+        font-family: Montserrat;
+        border: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-radius: 18px;
+        cursor: pointer;
+      }
+      .profile-picture {
+        width: 43px;
+        border-radius: 26px;
+        margin-right: 10px;
+      }
+      p {
+        font-family: Montserrat;
+      }
+      .profile-text {
+        margin: 2px;
+        font-size: 12px;
+      }
+      .profile-text-name {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .follow-btn {
+        background-color: rgb(20, 53, 202);
+        color: white;
+        border: none;
+        padding: 8px 16px 8px 16px;
+        font-family: Montserrat;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+      .search-bar {
+        width: 300px;
+        border-radius: 18px;
+        border: none;
+        padding: 5px 18px;
+        font-family: Montserrat;
+      }
+      .search-bar:focus {
+        outline: none;
+      }
+      .dowload-btn {
+        background-color: rgb(133, 61, 133);
+        font-family: Montserrat;
+        color: white;
+        border: solid;
+        border-color: white;
+        border-width: 1px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .home-link {
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: row;">
+      <div style="background-color: lightblue;">div1</div>
+      <div style="background-color: lightpink;">
+        div2
+        <p>text</p>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-top: 10px;">
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; flex: 1">flex1</div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-top: 10px;">
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; flex: 1;">flex1</div>
+      <div style="background-color: lightblue; flex: 2;">flex2</div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-top: 10px; height: 70px;
+      border-width: 1px; border-style: solid; border-color: rgb(95, 95, 95); justify-content: center;">
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>;
+    <div style="display: flex; flex-direction: row; margin-top: 10px; height: 70px;
+      border-width: 1px; border-style: solid; border-color: rgb(95, 95, 95); justify-content: space-between;">
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>;
+    <div style="display: flex; flex-direction: row; margin-top: 10px; height: 70px;
+      border-width: 1px; border-style: solid; border-color: rgb(95, 95, 95); justify-content: space-between;
+      align-items: center; margin-bottom: 10px;">
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
+      <div style="background-color: lightblue; width: 200px;">200px</div>
+      <div style="background-color: lightpink; width: 75px;">75px</div>
+    </div>
+    <div style="display: flex;
+      flex-direction: row; margin-bottom: 10px;">
+      <div style="background-color: lightblue; width: 50px">item1</div>
+      <div style="background-color: lightpink; flex: 1;">item2</div>
+      <div style="background-color: lightblue; width: 75px;">item3</div>
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 10px;">
+      <div style="background-color: lightpink;">item1</div>
+      <div style="background-color: lightpink;">item2</div>
+      <div style="background-color: lightpink;">item3</div>
+      <div style="background-color: lightpink;">item4</div>
+    </div>
+    <div style="display: flex; flex-direction: row; height: 50px; justify-content: space-between;
+      border-color: gray; border: solid; border-width: 1px; align-items: center; margin-bottom: 200px;">
+      <div style="background-color: lightpink;">item1</div>
+      <div style="background-color: lightpink;">item2</div>
+    </div>
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <p style="font-family: Montserrat;">Challenge Exercises</p>
+      <p style="font-family: Montserrat; font-size: 12px;"> This is inside a flexbox, fun fact</p>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <div style="display: flex; flex-direction: column; width: 300px; box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px; padding: 8px;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+          <p style="font-family: Montserrat; font-size: 14px; font-weight: 500;">Home</p>
+          <button class="notifications">14</button>
+        </div>  
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+          <p style="font-family: Montserrat; font-size: 14px; font-weight: 500;">Notifications</p>
+          <button class="notifications">3</button>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+          <p style="font-family: Montserrat; font-size: 14px; font-weight: 500;">Messages</p>
+          <button class="notifications">5</button>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 100px;">
+      <div style="display: flex; flex-direction: column; width: 350px;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <div>
+            <img src="images/cat-1.jpg" class="profile-picture">
+          </div>
+          <div style="display: flex; flex-direction: column; flex: 2; justify-content: center; align-items: left;">
+            <p class="profile-text-name">Mimang</p>
+            <p class="profile-text">the cat</p>
+            <p class="profile-text">Popular</p>
+          </div>
+          <div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <div>
+            <img src="images/panda.webp" class="profile-picture">
+          </div>
+          <div style="display: flex; flex-direction: column; flex: 2; justify-content: center; align-items: left;">
+            <p class="profile-text-name">Panda-San</p>
+            <p class="profile-text">friendly panda</p>
+            <p class="profile-text">Popular</p>
+          </div>
+          <div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <div>
+            <img src="images/bear.webp" class="profile-picture">
+          </div>
+          <div style="display: flex; flex-direction: column; flex: 2; justify-content: center; align-items: left;">
+            <p class="profile-text-name">Bear-bear</p>
+            <p class="profile-text">i can bear it</p>
+            <p class="profile-text">Popular</p>
+          </div>
+          <div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 600px;
+        background-color: rgb(133, 61, 133); padding: 2px 8px; border-radius: 3px;">
+        <p class="home-link">Home</p>
+        <input type="text" placeholder="Search" class="search-bar">
+        <button class="dowload-btn">Download</button>
+      </div>
+    </div>
+    <div style="display: flex; height: 50px; margin-bottom: 40px;">
+      <div style="width: 100px; background-color: lightpink; display: flex; align-items: center; justify-content: center;">
+        <p style="background-color: black; color: white;">item1</p>
+      </div>
+      <div style="width: 200px; background-color: lightblue;"></div>
+    </div>
+    <div style="display: flex; height: 50px; margin-bottom: 40px;">
+      <div style="background-color: lightpink; width: 100px;">
+
+      </div>
+      <div style="background-color: lightblue; width: 200px; display: flex;  flex-direction: column;">
+        <div style="display: flex; align-items: center; justify-content: left;">
+          <p style="margin: 0;">row1</p>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <p style="margin: 0; background-color: black; color: white;">row2</p>
+          <P style="margin: 0; background-color: black; color: white;">row2</P>
+        </div>
+      </div>
+    </div>
+
+    <div class="inbox-container">
+      <div class="inbox-title">
+        <p class="inbox-title-p">ALL INBOXES</p>
+      </div>
+      <div class="info-container">
+        <div class="profile-container">
+          <img src="images/cat-1.jpg" class="notif-profile-picture">
+        </div>
+        <div class="notif-container">
+          <div class="notif-title">
+            <p class="notif-title-text">Chewy Promotions</p>
+            <p class="notif-time">4:58 PM</p>
+          </div>
+          <div class="notif-description">
+            <p class="notif-subjext">Biggest sales of the year!</p>
+            <p class="notif-message">Hey there! We're writing to tell you about our...</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="profile-container">
+          <img src="images/panda.webp" class="notif-profile-picture">
+        </div>
+        <div class="notif-container">
+          <div class="notif-title">
+            <p class="notif-title-text">Best Buy</p>
+            <p class="notif-time">12:32 PM</p>
+          </div>
+          <div class="notif-description">
+            <p class="notif-subjext">Your Best Buy eReceipt</p>
+            <p class="notif-message">Thank you for shopping at Best Buy, here is...</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="profile-container">
+          <img src="images/bear.webp" class="notif-profile-picture">
+        </div>
+        <div class="notif-container">
+          <div class="notif-title">
+            <p class="notif-title-text">Netflix</p>
+            <p class="notif-time">4:58 PM</p>
+          </div>
+          <div class="notif-description">
+            <p class="notif-subjext">Here's what's coming soon to Netflix</p>
+            <p class="notif-message">Brand new movies and shows, old favorites...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</htm

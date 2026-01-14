@@ -1,0 +1,66 @@
+.inbox-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  border-radius: 5px;
+}
+.inbox-title-p,
+.notif-time,
+.notif-message {
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+.info-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+.profile-container {
+  height: 40px;
+} 
+.notif-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.notif-profile-picture {
+  height: 48px;
+  border-radius: 24px;
+  margin-top: 8px;
+}
+.notif-title {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+.notif-message, 
+.notif-subjext,
+.notif-title-text,
+.inbox-title-p {
+  margin: 0px;
+}
+
+.notif-title-text {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.notif-description {
+  display: flex;
+  flex-direction: column;
+}
+.notif-subjext {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.inbox-title-p {
+  margin-bottom: 10px;
+}
+
+.notif-message {
+  margin-left: 10px;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p,
+      button,
+      .cost-input,
+      input {
+        font-family: Montserrat, Arial;
+      }
+      .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+      }
+      .subscribe-container p {
+        font-size: 20px;
+      }
+      .subscribe-container button {
+        font-size: 16px;
+      }
+      .sub-btn {
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: none;
+        border-radius: 18px;
+        cursor: pointer;
+        font-weight: 500;
+      }
+      .is-subscribed {
+        background-color: rgb(209, 209, 209);
+        color: black;
+      }
+      .amazon-calc-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .amazon-calc-container p  {
+        margin: 8px;
+      }
+      .cost-input-style {
+        font-size: 16px;
+        padding: 4px 14px;
+        border: 2px solid rgb(29, 129, 26);
+        border-radius: 18px;
+      }
+      .cost-input-style:focus {
+        outline: none;
+      }
+      .amazon-calc-container button {
+        padding: 8px 10px;
+        background-color: rgb(29, 129, 26);
+        color: white;
+        font-weight: 500;
+        border: none;
+        border-radius: 18px;
+        cursor: pointer;
+        transition: background-color 0.20s;
+      }
+      .amazon-calc-container button:hover {
+        background-color: rgb(24, 99, 22);
+      }
+      .dom-button-style {
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px;
+        align-items: center;
+      }
+      .dom-button-style button,
+      .head-tails-style button,
+      .name-input button {
+        margin: 4px 4px;
+      }
+      .dom-button1 {
+        background-color: rgb(15, 86, 240);
+        color: white;
+        font-weight: 500;
+        border: 1px solid rgb(15, 86, 240);
+        padding: 5px 14px;
+        cursor: pointer;
+        border-radius: 18px;
+        transition: border 0.40s, 
+          border-radius 0.40s;
+      }
+
+      .dom-button2 {
+        background-color: rgb(173, 40, 40);
+        color: white;
+        font-weight: 500;
+        border: 1px solid  rgb(173, 40, 40);
+        padding: 5px 14px;
+        cursor: pointer;
+        border-radius: 18px;  
+        max-width: 140px;          
+        transition: border 0.40s, 
+          border-radius 0.40s, max-width 0.4s;
+      }
+      .dom-button-expand {
+        border-width: 10px;
+        border-radius: 40px;
+        transition: border-width 0.40s, 
+          border-radius 0.40s;
+      }
+      .dom-text-expand {
+        max-width: 120px;
+      }
+      .head-tails-style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .heads-btn {
+        background-color: #161E54;
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        border: none;
+        border-radius: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: padding 0.4s,
+          border-radius 0.4s,
+          font-size 0.4s,
+          font-weight 0.4s,
+          background-color 0.4s;
+      } 
+      .heads-btn:hover {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 23px;
+        font-weight: 700;
+        background-color: #232f80;
+      }
+      .tails-btn {
+        background-color: #F16D34;
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        border: none;
+        border-radius: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: padding 0.4s,
+          border-radius 0.4s,
+          font-size 0.4s,
+          font-weight 0.4s,
+          background-color 0.4s;
+      }
+      .tails-btn:hover {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 23px;
+        font-weight: 700;
+        background-color: #c75a2c;
+      }
+      .name-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .name-input input {
+        border: 4px solid rgb(25, 107, 230);
+      }
+      .name-input input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="subscribe-container">
+      <p>YouTube Subscribe Button</p>
+      <button class="sub-btn" onclick="subscribeAction();">Subscribe</button>
+    </div>
+    <div class="amazon-calc-container">
+      <p>Amazong Shipping Calculator</p>
+      <p>Orders under $40 = +$10 shipping.</p>
+      <p>Orders over $40 = FREE shipping.</p>
+      <div>
+        <input type="text" placeholder="Cost of Order" class="js-cost-input cost-input-style" onkeydown="keyChecker(event);">
+        <button onclick="calculateCost();">Calculate</button>
+      </div>
+      <p class="js-cost-text"></p>
+    </div>
+    <div class="dom-button-style">
+      <button class="dom-button1" onclick="displayButton();" onmouseenter="expandButton('dom-button2');" 
+        onmouseleave="deflateButton('dom-button2');">DOM button1</button>
+      <button class="dom-button2" onmouseleave="deflateButton('dom-button1');" 
+        onmouseenter="expandButton('dom-button1');">DOM button2</button>
+    </div>
+    <div class="head-tails-style">
+      <button onclick="displayHeadsTails('Heads')" class="heads-btn">Heads</button>
+      <button onclick="displayHeadsTails('Tails')" class="tails-btn">Tails</button>
+      <p></p>
+    </div>
+    <div class="name-input">
+      <div>
+        <input type="text" placeholder="Name">
+        <button onclick="displayName();">Submit</button>
+      </div>
+      <p></p>
+    </div>
+    <script>
+      function expandButton(className) {
+        const dombutton1Element = document.querySelector(`.${className}`);
+        dombutton1Element.classList.add('dom-button-expand');
+      }
+      function deflateButton(className) {
+        const dombutton1Element = document.querySelector(`.${className}`);
+        dombutton1Element.classList.remove('dom-button-expand');
+      }
+      function displayName() {
+        const name = document.querySelector('.name-input input').value;
+        let nameDisplay = document.querySelector('.name-input p')
+        if (!name || Number(name)) {
+          nameDisplay.innerHTML = 'Please enter a name';
+        }
+        else {
+          nameDisplay.innerHTML = `Your name is: ${name}`;
+        }
+      }
+      function displayHeadsTails(side) {
+        let chosenSide = document.querySelector('.head-tails-style p');
+        if (side === 'Heads') {
+          chosenSide.innerHTML = "You Chose: Heads"
+        }
+        else {
+          chosenSide.innerHTML = "You Chose: Tails"
+        }
+      }
+      function displayButton() {
+        console.log(document.querySelector('.dom-button1').innerHTML);
+        let button2Element = document.querySelector('.dom-button2');
+        if (button2Element.innerText === 'Updated'){
+          button2Element.innerHTML = "DOM button2";
+          button2Element.classList.remove('dom-text-expand');
+        }
+        else {
+          button2Element.innerHTML = "Updated";
+          button2Element.classList.add('dom-text-expand');
+        }
+        
+      }
+      function keyChecker(event) {
+        if (event.key === 'Enter') {
+          calculateCost();
+        }
+      }
+      function subscribeAction() {
+        const subButtonElement = document.querySelector('.subscribe-container button');
+        if (subButtonElement.innerText === 'Subscribe') {
+          subButtonElement.innerText= 'Subscribed';
+          subButtonElement.classList.add('is-subscribed');
+        }
+        else {
+           subButtonElement.innerText = 'Subscribe';
+           subButtonElement.classList.remove('is-subscribed');
+        }
+      }
+      function calculateCost() {
+        const inputCostElement = document.querySelector('.js-cost-input');
+        const totalCostElement = document.querySelector('.js-cost-text');
+        let cost = Number(inputCostElement.value);
+        if (!cost) {
+          totalCostElement.innerHTML = 'Please input a value or a number'
+        }
+        else if (cost < 40 ) {
+          totalCostElement.innerHTML = `$${cost+10}`
+        }
+        else{
+          totalCostElement.innerHTML = `$${cost}`
+        }
+      }
+    </script>
+  </body>
+</html>

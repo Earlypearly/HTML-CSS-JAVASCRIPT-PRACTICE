@@ -1,0 +1,216 @@
+     p {
+        font-family: Roboto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .video-title{
+        font-weight: bold;
+        font-size: 18px;
+        width: 300px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+      .video-stats{
+        font-size: 14px;
+        color: rgb(96,96,96);
+        margin-bottom: 20px;
+      }
+      .video-creator{
+        font-size: 14px;
+        color: rgb(96,96,96);
+        margin-bottom: 20px;
+      }
+      .video-description{
+        font-size: 14px;
+        color: rgb(96,96,96);
+        width: 270px;
+        line-height: 22px;
+        margin-bottom: 100px;
+      }
+      .apple-text,
+      .example-text{
+        color: white;
+        margin-bottom: 50px;
+        background-color: rgb(227, 65, 64);
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+      .underlined-text:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .example-span{
+        margin-left: 12px;
+      }
+      .tahoma-text{
+        font-family: Tahoma;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+      .tuesday-text{
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 30px;
+        width: 200px;
+      }
+      .tuesday-sale{
+        color: red;
+        font-style: italic;
+        font-weight: 200;
+      }
+      .verdana-title{
+        font-family: Verdana;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+      .verdana-subtitle{
+        font-family: Verdana;
+        font-size: 14px;
+        color: rgb(96,96,96);
+        margin-top: 8px;
+        margin-bottom: 12px;
+      }
+      .verdana-description{
+        font-family: Verdana;
+        width: 280px;
+        margin-bottom: 0px;
+      }
+      .verdana-btn{
+        font-family: verdana;
+        background-color: green;
+        border: none;
+        color: white;
+        margin-top: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .verdana-btn:hover{
+        background-color: darkgreen;
+      }
+      .get-started-tag{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .apple-title{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .apple-subtitle{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 12px;
+      }
+      .apple-tag{
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(0, 122, 255);
+        text-align: center;
+        cursor: pointer;
+      }
+      .mac-new-title{
+        color: orangered;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .mac-title{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 0px;
+      }
+      .mac-title-2{
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+      .mac-price{
+        font-size: 16px;
+        color: rgb(96,96,96);
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+      .mac-buy-btn{
+        background-color: rgb(17, 0, 255);
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding-top: 10px;  
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 18px;
+        cursor: pointer;
+        transition: background-color 0.15s, opacity 0.15s;
+      }
+      .mac-buy-btn:hover{
+        background-color: rgb(0, 0, 200);
+        opacity: 0.8;
+      }
+      .mac-buy-btn-container{
+        text-align: center;
+      }
+      .fivef-price {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      .fivef-currency {
+        font-size: 16px;
+        color: rgb(83, 82, 82);
+        font-weight: normal;
+        margin-left: 4px;
+        margin-top: 8px;
+      }
+      .fivef-stats {
+        font-size: 16px;
+        color: green;
+        margin-top: 4px;
+        font-weight: bold;
+        margin-top: 8px;
+      }
+      .fivef-stats2 {
+        font-size: 16px;
+        color: red;
+        margin-left: 4px;
+        font-weight: bold;
+      }
+      .fcc-title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 50px;
+      }
+      .fcc-title-span {
+        font-weight: normal;
+        color: rgb(96, 96, 96);
+        margin-left: 8px;
+      }
+      .fcc-message {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        width: 500px;
+        line-height: 22px;
+      }
+      .fcc-redirect {
+        margin-top: 10px;
+        width: 500px;
+        line-height: 22px;
+      }
+      .fcc-link {
+        color: rgb(0, 122, 255);
+        cursor: pointer;
+      }

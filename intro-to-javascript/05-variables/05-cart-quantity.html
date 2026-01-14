@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p,
+      button {
+        font-family: Montserrat, Arial;
+        font-size: 16px;
+      }
+      button {
+        cursor: pointer;
+        margin: 4px;
+      }
+      .button-container button {
+        background-color: rgb(165, 81, 47);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 10px;
+        transition: background-color 0.15s;
+      }
+      .button-container button:hover {
+        background-color: rgb(119, 61, 38);
+      }
+      .cart-quantity-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cart-quantity-container">
+      <p>Cart Quantity</p>
+      <div class="button-container">
+        <button onclick="displayQuantity();">Show Quantity</button>
+        <button onclick="addQuantity();">Add to cart</button>
+        <button onclick="removeQuantity();">Remove from cart</button>
+        <button onclick="addTwoQuantity();">+2</button>
+        <button onclick="addThreeQuantity();">+3</button>
+        <button onclick="addFourQuantity();">+4</button>
+        <button onclick="addFiveQuantity();">+4</button>
+        <button onclick="minustwoQuantity();">-2</button>
+        <button onclick="minusthreeQuantity();">-3</button>
+        <button onclick="resetQuantity();">Reset Cart</button>
+      </div>
+    </div>
+
+    <script>
+      let cartQuantity = 0;
+      let isEmpty;
+
+      function displayQuantity() {
+        console.log('Car Quantity: ' + cartQuantity);
+      }
+      function addQuantity() {
+        cartQuantity++;
+        displayQuantity();
+      }
+      function removeQuantity() {
+        if (cartQuantity === 0) {
+          displayQuantity();
+          console.log('Cart is already empty.')
+        }
+        else {
+          cartQuantity--;
+          displayQuantity();
+        }
+      }
+      function addTwoQuantity() {
+        cartQuantity+=2;
+        displayQuantity();
+      }   
+      function addThreeQuantity() {
+        cartQuantity+=3;
+        displayQuantity();
+      }
+      function addFourQuantity() {
+        cartQuantity+=4;
+        displayQuantity();
+      }  
+      function addFiveQuantity() {
+        cartQuantity+=5;
+        displayQuantity();
+      }
+      function minustwoQuantity() {
+        if (cartQuantity === 0) {
+          displayQuantity();
+          console.log('Cart is already empty.')
+        }
+        else if ( cartQuantity <=1 ) {
+          console.log('cant subtract number is too small.')
+        }
+        else {
+          cartQuantity-=2;
+          displayQuantity();
+        }
+      }
+      function minusthreeQuantity() {
+        if (cartQuantity === 0) {
+          displayQuantity();
+          console.log('Cart is already empty.')
+        }
+        else if ( cartQuantity <=2 ) {
+          console.log('cant subtract number is too small.')
+        }
+        else {
+          cartQuantity-=3;
+          displayQuantity();
+        }
+      }
+      function resetQuantity() {
+        cartQuantity = 0;
+        console.log('Cart was reset.')
+        displayQuantity();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  background-color: #222831;
+}
+p {
+  font-family: Montserrat, Arial;
+  margin: 4px;
+  color: white;
+}
+button {
+  font-family: Montserrat, Arial;
+  margin: 4px;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-title-container p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.move-icon {
+  height: 60px;
+  padding: 15px;
+  border-radius: 40px;
+}
+.chosen-move-icon {
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+.move-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+}
+.move-icon-container button {
+  background-color: #393e46;
+  border: 2px solid #dfd0b8;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 1px;
+  transition: padding 0.4s, border-radius 0.4s;
+}
+.move-icon-container button:hover {
+  padding: 10px;
+  border-radius: 60px;
+}
+.winner-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.chosen-move-style p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+}
+.reset-score-container button {
+  background-color: #393e46;
+  color: white;
+  border: 2px solid #dfd0b8;
+  border-radius: 18px;
+  padding: 5px 20px;
+  cursor: pointer;
+  width: 123px;
+  height: 30px;
+  transition: width 0.4s, height 0.4s;
+}
+.reset-score-container button:hover {
+  width: 135px;
+  height: 32px;
+}

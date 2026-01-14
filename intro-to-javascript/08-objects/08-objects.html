@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects Practice</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const product = {
+        name: 'socks',
+        price: 1090
+      };
+
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+      product.name = 'cotton socks';
+
+      console.log(product.name);
+
+      product.Date = 'just now';
+      console.log(product);
+
+      delete product.Date;
+      console.log(product);
+
+      console.log(typeof product);
+      */
+      /*
+      const product2 = {
+        name: 'shirt',
+        delivery_time: '1 day',
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1() {
+          console.log('function inside object')
+        }
+      };
+
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name']);
+      console.log(product2.delivery_time);
+      console.log(product2.rating.stars);
+      product2.fun();
+
+      console.log(JSON.stringify(product2));
+      const jasonString = JSON.stringify(product2);
+      console.log(JSON.parse(jasonString));
+      */
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+      console.log('hello'.toLowerCase());
+      
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1;
+
+
+      object1.message = 'Good Job';
+      console.log(object1);
+      /* even thoug we use const we can still the variables inside the object*/
+      /* object is a reference pointing to the memory where the variables are located*/
+      console.log(object2);
+
+      const object3 = {
+        message: 'Good Job'
+      }
+
+      console.log(object1 === object3);
+      /* its false since we are comaparing the reference not the variables*/ 
+
+      console.log(object1.message === object3.message);
+      /* this is true because we are comparing the variables*/
+
+      const object4 = {
+        message: 'Good Job',
+        price: 799
+      } 
+
+      //const message = object4.message;
+      const {message, price} = object4;
+      console.log(message);
+      console.log(price/100);
+      // shorthand propert below
+
+      const object5 = {
+        message,
+        method() {
+          console.log('method');
+        }
+        /*method: function fuction1( ) {
+          console.log('method');
+        } the code above is the same as creating a function there is no need to create a function name*/
+        // which is the same as message: message
+        
+      }
+      console.log(object5);
+      object5.method();
+
+      const product1 = {
+        name: 'basketball',
+        price: 2095
+      }
+      product1.price = product1.price + 500;
+      console.log(product1);
+
+      product1.deliveryTime = '3 days';
+      console.log(product1);
+
+      const product2 = {
+        name: 'volley ball',
+        price: 2050
+      }
+
+      function comparePrice(product1, product2) {
+        if (product1.price < product2.price) {
+          console.log(product1);
+        }
+        else {
+          console.log(product2);
+        }
+      }
+
+      comparePrice(product1,product2);
+
+
+      const product3 = {
+        name: 'tennis ball',
+        price: 1000
+      }
+
+      const product4 = {
+        name: 'tennis ball',
+        price: 1000
+      }
+
+      function isSame(product3, product4) {
+        if (product3.name === product4.name && product3.price === product4.price) {
+          console.log('The products are the same')
+        }
+        else {
+          console.log('the products are not the same');
+        }
+      }
+
+      isSame(product3,product4);
+      isSame(product1,product3);
+      let greetings = 'Good Morning';
+      console.log(greetings);
+      console.log(greetings.toLowerCase());
+      console.log(greetings.repeat(4));
+
+    </script>
+  </body>
+</html>

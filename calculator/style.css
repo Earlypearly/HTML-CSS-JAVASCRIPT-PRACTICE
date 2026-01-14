@@ -1,0 +1,96 @@
+body,
+button {
+  font-family: Montserrat, Arial;
+}
+body {
+  background-color: #5C3E94;
+}
+button {
+  font-size: 16px;
+  margin: 2px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #211832;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.num-pad-container {
+  display: flex;
+  flex-direction: column;
+
+}
+.num-pad-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*Result Text*/
+.result-text-style {
+  width: 100%;
+  text-align: right;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.result-text-style input {
+  color: white  ;
+  margin: 10px 2px;
+  padding: 5px 10px;
+  font-size: 25px;
+  transition: font-size, 0.5s;
+  white-space: nowrap;
+  width: 190px; 
+  background-color: #5C3E94;
+  border: 2px solid #211832;
+  border-radius: 5px;
+  outline: none;
+  text-align: right;
+  overflow-x: auto;
+}
+
+/*Number Styles*/
+.num1-btn {
+  padding: 15px 22.5px;
+}
+.plus-btn,
+.minus-btn,
+.multiply-btn,
+.slash-btn {
+  background-color: #F25912;
+}
+.plus-btn {
+  padding-left: 20.5px;
+}
+.minus-btn {
+  padding: 12px 21.5px 16px 21.5px;
+}
+.multiply-btn {
+  padding: 15px 21.5px 9px 21.5px;
+}
+.dot-btn {
+  padding: 8px 23px 18px 23px;
+}
+.slash-btn {
+  padding: 15px 22px;
+}
+.clear-btn {
+  padding: 15px 31px;
+}
+.del-btn {
+  padding: 15px 11.5px;
+  margin-left: 0;
+}
+
+.num-dark-btn:hover {
+  background-color: #312349;
+}
+.orange-btn:hover {
+  background-color: #412B6B;
+}

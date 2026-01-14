@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Header Sidebar Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-bottom: 3000px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+      }
+      .fb-profile {
+        height: 48px;
+        border-radius: 24px;
+      }
+      .user-name {
+        font-family: Montserrat, Arial; 
+        font-weight: bold;
+        margin-left: 10px;
+        flex: 1;
+      }
+      .add-friend-btn {
+        background-color: rgb(41, 95, 212);
+        color: white;
+        font-family: Montserrat, Arial;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .message-btn {
+        background-color: rgb(218, 216, 216);
+        font-family: Montserrat, Arial;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+      .sidebar {
+        display: flex;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        bottom: 0;
+      }
+      .image-container {
+        height: 60px;
+        border-radius: 30px;
+        margin-top: 5px;
+      }
+      .profile-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(27, 27, 27);
+        padding-left:10px;
+        padding-right: 10px;
+        padding-top: 10px;
+      }
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: rgb(49, 49, 49);
+      }
+      .info-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .info-text, 
+      .plus-text {
+        font-family: Montserrat, Arial;
+        margin: 0;
+      }
+      .info-text {
+        font-weight: 800;
+        color: white;
+        margin-left: 10px;
+        margin-top: 10px
+      }
+      .plus-text {
+        font-weight: 800;
+        font-size: 20px;
+        color: rgb(167, 167, 167);
+        margin-right: 10px;
+        margin-top: 10px
+      }
+      .info-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      .list-text {
+        font-family: Montserrat, Arial;
+        margin-top: 8px;
+        color: rgb(167, 167, 167);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/cat-1.jpg" class="fb-profile">
+      <p class="user-name">Mimang the Cat</p>
+      <button class="add-friend-btn">Add Friend</button>
+      <button class="message-btn">Message</button>
+    </div>
+    <div class="sidebar">
+      <div class="profile-container">
+        <img src="images/cat-1.jpg" class="image-container">
+        <img src="images/bear.webp" class="image-container">
+        <img src="images/panda.webp" class="image-container">
+      </div>
+      <div class="info-container">
+        <div class="info-title">
+          <p class="info-text">INFO</p>
+          <p class="plus-text">+</p>
+        </div>
+        <div class="info-list">
+          <p class="list-text"># new-videos</p>
+          <p class="list-text"># updates</p>
+          <p class="list-text"># faq</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

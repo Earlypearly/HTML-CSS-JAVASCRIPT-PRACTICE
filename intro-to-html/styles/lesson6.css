@@ -1,0 +1,21 @@
+.tesla-header{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tesla-title{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.tesla-description{
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 22px;
+}
+.tesla-span{
+  text-decoration: underline;
+  cursor: pointer;
+}

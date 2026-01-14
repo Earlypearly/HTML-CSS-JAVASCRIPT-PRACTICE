@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="num-pad-container">
+          <div class="js-result result-text-style">
+          <input type="text" class="js-result-input">
+        </div>
+        <div class="num-pad-row">
+          <button class="num1-btn num-dark-btn js-btn1" onclick="updateNumber(1)">1</button>
+          <button class="num2-btn num-dark-btn" onclick="updateNumber(2)">2</button>
+          <button class="num3-btn num-dark-btn" onclick="updateNumber('3');">3</button>
+          <button class="plus-btn orange-btn" onclick="updateNumber('+');">+</button>
+        </div>
+        <div class="num-pad-row">
+          <button class="num4-btn num-dark-btn" onclick="updateNumber('4');">4</button>
+          <button class="num5-btn num-dark-btn" onclick="updateNumber('5');">5</button>
+          <button class="num6-btn num-dark-btn" onclick="updateNumber('6');">6</button>
+          <button class="minus-btn orange-btn" onclick="updateNumber('-');">-</button>
+        </div>
+        <div class="num-pad-row">
+          <button class="num7-btn num-dark-btn" onclick="updateNumber('7');">7</button>
+          <button class="num8-btn num-dark-btn" onclick="updateNumber('8');">8</button>
+          <button class="num9-btn num-dark-btn" onclick="updateNumber('9');">9</button>
+          <button class="multiply-btn orange-btn" onclick="updateNumber('*');">*</button>
+        </div>
+        <div class="num-pad-row">
+          <button class="num0-btn num-dark-btn" onclick="updateNumber('0');">0</button>
+          <button class="dot-btn num-dark-btn" onclick="updateNumber('.');">.</button>
+          <button class="equals-btn num-dark-btn" onclick="updateNumber('=');">=</button>
+          <button class="slash-btn orange-btn" onclick="updateNumber('/');">/</button>
+        </div>
+        <div>
+          <button class="clear-btn num-dark-btn" onclick="updateNumber('Clear');">Clear</button>
+          <button class="del-btn num-dark-btn" onclick="deleteChar()">Del</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

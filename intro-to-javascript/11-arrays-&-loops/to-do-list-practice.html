@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="to-do-list-practice-style.css">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="to-do-container-list">
+      <div class="to-do-components-container">
+        <div>
+          <p class="title-style">To Do List</p>
+        </div>
+        <div class="task-list-container">
+          <div class="add-task-style">
+            <input class="js-to-do-input to-do-input-style" placeholder="To Do Name">
+            <input class="date-input-style js-datetime-input" type="datetime-local">
+            <img class="add-icon-style" onclick="addtoDo();" src="images/add-btn2.png">
+          </div>
+          <div class="js-todo-text task-text-style">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="to-do-list-practice.js"></script>
+  </body>
+</html>
