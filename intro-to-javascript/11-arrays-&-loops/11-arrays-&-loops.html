@@ -316,6 +316,7 @@
     findSearch(['hello', 'good morning', 'nihao', 'search', 'dont search', 'search'], 'gyat')
 
     */
+   /*
     function removeEggs(foodArray) {
       let removedEggArray = [];
       for (let i = 0; i < foodArray.length; i++) {
@@ -349,6 +350,24 @@
 
     console.log(removefirst2Eggs(['egg','apple','egg','egg','ham']));
     console.log(removefirst2Eggs(['egg','egg','egg','egg','ham', 'banana','watermelon','mango','egg']));
+      */
+
+    const withoutEnds = (str) => {
+      return str.substring(1, str.length -1);
+    };
+    console.log(withoutEnds("abc"));  
+
+    const grabSecondHalf = (str) => {
+      if (str.length % 2 === 0 ) {
+        return str.substring(str.length /2)
+      } else {
+        return str.substring((str.length /2) + 1)
+      } 
+    };
+    console.log(grabSecondHalf("ab"));
+    console.log(grabSecondHalf("abc"));
+
+    console.log(String.fromCharCode(46));
     </script>
   </body>
 </html>
